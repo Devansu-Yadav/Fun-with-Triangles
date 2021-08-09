@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun With Triangles</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/calArea.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
@@ -29,12 +29,15 @@
     </nav>
 
     <div class="container">
-        <p class="description">Enter the angles in below input boxes and we <br>
-            will tell you if those angles make a Triangle</p>
+        <h1 class="heading">Calculate Area of Triangle</h1>
+
+        <div class="formula">Area of Triangle = 1/2(Base * Height)</div>
+
         <div class="input">
-            <input id="angle-1" type="number">
-            <input id="angle-2" type="number">
-            <input id="angle-3" type="number">
+            <label id="base">Base(in cm)</label>
+            <input id="base-side" type="number">
+            <label id="height">Height(in cm)</label>
+            <input id="height-side" type="number">
         </div>
 
         <button id="submit-btn">Submit</button>
@@ -77,6 +80,5 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="./src/js/index.js"></script>
+    <script type="text/javascript" src="./src/js/calArea.js"></script>
 </body>
-</html>

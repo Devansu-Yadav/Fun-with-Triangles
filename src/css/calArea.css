@@ -28,14 +28,29 @@ body {
     text-align: center;
 }
 
-.container .description {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 2rem;
+.container .heading {
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
+}
+
+.container .formula {
+    font-size: 1.3rem;
+    color: black;
+    border: 2px solid black;
+    padding: 1.5rem;
+    margin: 1rem 0rem 3rem 0rem;
 }
 
 .container .input {
     margin: 0rem 1rem;
+}
+
+.input label {
+    position: relative;
+    left: 7px;
+    font-size: 1.3rem;
+    display: block;
+    margin: 1rem 0rem 0.5rem 0rem;
 }
 
 .input input {
@@ -43,8 +58,8 @@ body {
     margin: 1rem 0.5rem;
     font-size: 1.2rem;
     text-align: center;
-    width: 88px;
-    height: 44px;
+    width: 30vw;
+    height: 8vh;
     border: 2px solid black;
 }
 
@@ -144,7 +159,6 @@ body {
     font-size: 1.6rem;
 }
 
-
 /* Responsive CSS for Mobile */
 @media only screen and (max-width: 760px) {
     .container {
@@ -176,6 +190,10 @@ body {
         font-size: 1rem;
     }
 
+    .container .heading {
+        font-size: 2rem;
+    }
+
     .link {
         padding: 0.5rem 0rem;
     }
@@ -189,6 +207,14 @@ body {
     .input input {
         width: 40px;
         height: 30px;
+    }
+
+    .container .formula {
+        font-size: 1rem;
+    }
+
+    .input label {
+        font-size: 1rem;
     }
 
     .navigation .nav-pills  {

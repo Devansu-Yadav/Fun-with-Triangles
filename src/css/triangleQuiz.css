@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 55%;
+    max-width: 60%;
     min-height: 65vh;
     display: flex;
     flex-direction: column;
@@ -25,27 +25,32 @@ body {
     justify-content: center;
     margin: auto;
     padding: 2rem;
-    text-align: center;
 }
 
-.container .description {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 2rem;
+.container .heading {
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
 }
 
-.container .input {
-    margin: 0rem 1rem;
+.container .triangleQuiz {
+    margin: 2rem 0rem;
+    padding: 1rem;
 }
 
-.input input {
-    padding: 0.5rem;
-    margin: 1rem 0.5rem;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 88px;
-    height: 44px;
-    border: 2px solid black;
+.triangleQuiz .questions {
+    padding: 1rem;
+    margin: 1rem 0rem 0rem 0rem;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.questions p {
+    font-weight: 600;
+    padding: 0.5rem 0rem;
+}
+
+.triangleQuiz input {
+    margin: 0rem 0.4rem;
 }
 
 .container #submit-btn {
@@ -63,7 +68,7 @@ body {
     border: 2px solid black;
 }
 
-.container .output {
+.container #output-score {
     font-size: 1.3rem;
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -144,7 +149,6 @@ body {
     font-size: 1.6rem;
 }
 
-
 /* Responsive CSS for Mobile */
 @media only screen and (max-width: 760px) {
     .container {
@@ -160,19 +164,12 @@ body {
     }
 }
 
-@media only screen and (max-width: 522px) {
-    .input input {
-        width: 60px;
-        height: 30px;
-        margin: 1rem 0.3rem;
-        padding: 0.3rem;
+@media only screen and (max-width: 608px) {
+    .container .triangleQuiz {
+        width: 400px;
     }
 
-    .container .description {
-        font-size: 1.2rem;
-    }
-
-    .container .output {
+    .container #output-score {
         font-size: 1rem;
     }
 
@@ -185,10 +182,23 @@ body {
     }
 }
 
-@media only screen and (max-width: 394px) {
-    .input input {
-        width: 40px;
-        height: 30px;
+@media only screen and (max-width: 424px) {
+
+    .container .heading {
+        font-size: 2rem;
+    }
+
+    .container .triangleQuiz {
+        width: 300px;
+        margin: 1rem 0rem;
+    }
+
+    .triangleQuiz input {
+        margin: 0rem 0.2rem;
+    }
+
+    .questions label {
+        font-size: 0.7rem;
     }
 
     .navigation .nav-pills  {
